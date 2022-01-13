@@ -121,6 +121,9 @@ main{
     line-height: 25px;
     font-size: 15px;
 }
+.footer a{
+    margin: 0 20px;
+}
 
 /* Classical Guitars page grid */
 .guitar_grid a img{
