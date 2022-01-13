@@ -166,6 +166,10 @@ h1,h2,h3,h4,h5,h6{
     margin-top: 3%;
     margin-bottom: 3%;
 }
+.circles img:hover{
+    transform: rotateY(360deg);
+    transition: all 1.5s ease;
+}
 /* ukuleles page grid */
 .ukulele_grid{
     display: grid;
@@ -188,6 +192,10 @@ h1,h2,h3,h4,h5,h6{
     grid-template-columns: 1fr 1fr;
     margin-top: 3%;
     margin-bottom: 3%;
+}
+.uku_circles img:hover{
+    transform: rotateY(360deg);
+    transition: all 1.5s ease;
 }
 #sopran_ukulele img{
     width: 100%;
@@ -277,5 +285,71 @@ h1,h2,h3,h4,h5,h6{
         "video2"
         "p2";
     }
+
+}
+.card{
+    height: 250px;
+    width: 200px;
+    background-color: white;
+    position: relative;
+    transform-style: preserve-3d;
+    box-shadow: 5px 5px 50px 8px black;
+    transition: all 1s ease;
+    cursor: pointer;
+    margin: 10% 10%;
+}
+.card:hover{
+    transform: rotateY(180deg);
+}
+
+.card_front{
+    width: 100%;
+    height: 100%;
+    background-image: url(/img/8.png);
+    background-size:cover;
+    position: absolute;
+    
+
+}
+.card_back{
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    transform: rotateY(180deg) translateZ(1px);
+    
+}
+.card_back p{
+    margin: 10px 0px;
+    text-align:center;
+}
+.bg_card{
+    height: 15%;
+    width: 100%;
+    background-color: lightblue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+       
+
+}
+.bg_card h1{
+    font-size: 20px;
+    color: #fff;
+    transform: translateY(5px); 
+}
+.cont_card {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;    
+}
+.cont_card a{
+    background-color: green;
+    padding: 10px 20px;
+    color: #fff;
+}
+
+
+@keyframes rotate {
 
 }
