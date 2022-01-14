@@ -1,3 +1,4 @@
+/* Generales */
 *{
     padding: 0px;
     margin: 0px;
@@ -17,89 +18,6 @@ h1,h2,h3,h4,h5,h6{
 a,a:visited{
     text-decoration: none;
     color: black;
-}
-
-.header{
-    background-color: white;
-    position: fixed;
-    width: 100%;
-    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.5);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    max-height: 120px;
-    z-index: 10;
-}
-
-.header__navbar ul li{
-    display: inline-block;
-    padding: 1rem;
-
-}
-
-
-
-.header__navbar a{
-    text-decoration: none;
-    color: black;
-    text-align: center;
-    font-size: 1rem;
-    padding: 0rem;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    
-}
-
-.header__title{
-    color: black;
-    font-size: 1rem;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-}
-
-.header__navbar{
-    display: flex;
-    justify-content: space-between;
-}
-.header__navbar li{
-    position: relative;
-    background-color: white;
-    
-}
-
-.header__navbar li>ul{
-    display: block;
-    position: absolute;
-    top: 100%;
-    left: 0%;
-
-}
-.header__navbar li>ul>li{
-    position: relative;
-    padding: 0.5rem;
-    min-width: 160px;
-}
-.header__navbar li>ul>li>ul{
-    display: block;
-    position: absolute;
-    top: 0%;
-    left: 100%;
-}
-.header__navbar li>ul>li>ul>li{
-    width: 100%;
-    min-width: 200px;
-}
-.header__navbar ul li ul{
-    display: none;
-}
-.header__navbar li:hover>ul{
-    display: block;
-}
-
-.header__navbar ul li ul li ul{
-    display: none;
-}
-
-.header__navbar li:hover>ul>li{
-    display: block;
 }
 
 main{
@@ -124,7 +42,76 @@ main{
 .footer a{
     margin: 0 20px;
 }
+h1,h2,h3,h4,h5,h6{
+    text-align: center;
+}
+/* Home */
+@media only screen and (max-width:768px){
+    .change{
+        order: 2;
+    }
+}
+.card{
+    height: 250px;
+    width: 200px;
+    background-color: white;
+    position: relative;
+    transform-style: preserve-3d;
+    box-shadow: 5px 5px 50px 8px black;
+    transition: all 1s ease;
+    cursor: pointer;
+    margin: 10% 10%;
+}
+.card:hover{
+    transform: rotateY(180deg);
+}
 
+.card_front{
+    width: 100%;
+    height: 100%;
+    background-image: url(/img/8.png);
+    background-size:cover;
+    position: absolute;
+    
+
+}
+.card_back{
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    transform: rotateY(180deg) translateZ(1px);
+    
+}
+.card_back p{
+    margin: 10px 0px;
+    text-align:center;
+}
+.bg_card{
+    height: 15%;
+    width: 100%;
+    background-color: lightblue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+       
+
+}
+.bg_card h1{
+    font-size: 20px;
+    color: #fff;
+    transform: translateY(5px); 
+}
+.cont_card {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;    
+}
+.cont_card a{
+    background-color: green;
+    padding: 10px 20px;
+    color: #fff;
+}
 /* Classical Guitars page grid */
 .guitar_grid a img{
     width: 130px;
@@ -147,9 +134,7 @@ main{
     object-fit: cover;
 }
 
-h1,h2,h3,h4,h5,h6{
-    text-align: center;
-}
+
 .tall{
     grid-row: span 2 / auto
 }
@@ -223,41 +208,8 @@ h1,h2,h3,h4,h5,h6{
     max-width: 1000px;
     margin: 0 auto;
 }
-/* index videos*/
-.video_grid{
-    display: grid;
-    grid-template-columns: repeat(auto-fit,minmax(300px, 1fr));
-    grid-template-areas: "video1 p1"
-    "p2 video2";
-    grid-row-gap: 3rem;
-
-}
-
-.video1{
-    grid-area: video1;
-}
-.video2{
-    grid-area: video2;
-}
-.p1{
-    grid-area: p1;
-}
-.p2{
-    grid-area: p2;
-}
-
-
 
 @media only screen and (max-width:768px){
-    iframe{
-        width: 300px;
-    }
-    .video_grid{
-        grid-template-areas: "video1"
-        "p1"
-        "video2"
-        "p2";
-    }
     #indianrosewoodguitars div{
         width: 100%;
         max-width: 500px;
@@ -270,86 +222,9 @@ h1,h2,h3,h4,h5,h6{
         max-width: 500px;
     }
 }
-.form{
-    width: 100%;
-    display: flex;
-    align-content: center;
-    justify-content: center;
-    margin-bottom: 8%;
-    
-}
-@media only screen and (min-width: 769px) and (max-width:992px){
-    .video_grid{
-        grid-template-areas: "video1"
-        "p1"
-        "video2"
-        "p2";
-    }
-
-}
-.card{
-    height: 250px;
-    width: 200px;
-    background-color: white;
-    position: relative;
-    transform-style: preserve-3d;
-    box-shadow: 5px 5px 50px 8px black;
-    transition: all 1s ease;
-    cursor: pointer;
-    margin: 10% 10%;
-}
-.card:hover{
-    transform: rotateY(180deg);
-}
-
-.card_front{
-    width: 100%;
-    height: 100%;
-    background-image: url(/img/8.png);
-    background-size:cover;
-    position: absolute;
-    
-
-}
-.card_back{
-    width: 100%;
-    height: 100%;
-    background-color: white;
-    transform: rotateY(180deg) translateZ(1px);
-    
-}
-.card_back p{
-    margin: 10px 0px;
-    text-align:center;
-}
-.bg_card{
-    height: 15%;
-    width: 100%;
-    background-color: lightblue;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-       
-
-}
-.bg_card h1{
-    font-size: 20px;
-    color: #fff;
-    transform: translateY(5px); 
-}
-.cont_card {
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;    
-}
-.cont_card a{
-    background-color: green;
-    padding: 10px 20px;
-    color: #fff;
-}
-
-
-@keyframes rotate {
-
+/* Contact */
+.form1{
+    padding: 5%;
+    margin: 5% auto;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.4);
 }

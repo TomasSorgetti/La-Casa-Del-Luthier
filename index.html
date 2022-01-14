@@ -17,26 +17,37 @@
 </head>
 
 <body>
-    <header class="header">
-        <span class="header__title">
-          <a href="index.html"> <h1>Tomás Sorgetti</h1></a>
-        </span>
-        <nav class="header__navbar">
-            <ul>
-                <li> <a href="index.html">Home</a></li>
-                <li> <a href="">Instruments</a> 
-                    <ul>
-                        <li> <a href="classicalguitars.html">Classical Guitars</a></li>
-                        <li> <a href="ukuleles.html">Ukuleles</a></li> 
-                    </ul>
-                </li>
-                <li><a href="about.html">About Us</a></li>
-                <li><a href="contact.html">Contact</a></li>
-
+  <nav class="navbar navbar-expand-lg navbar-light">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="index.html">Tomás Sorgetti</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Instruments
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="classicalguitars.html">Guitars</a></li>
+              <li><a class="dropdown-item" href="ukuleles.html">Ukuleles</a></li>
             </ul>
-        </nav>
-    </header>
-    <main>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">About Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+    <main class="container">
         <section>
             <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
                 <div class="carousel-indicators">
@@ -75,18 +86,19 @@
                     iusto
                     facilis illum excepturi.</p>
             </div>
-            <div class="video_grid">
+            <div class="row mb-5">
                 <iframe width="400" height="250" src="https://www.youtube.com/embed/dTnsT6uH708" title="YouTube video player"
                     frameborder="0"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                    allowfullscreen class="video1" loading="lazy" ></iframe>
-                <p class="p1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod fugit beatae at. Facere sapiente odit ad iusto animi, ea aspernatur quisquam molestias aut impedit magni ab qui quibusdam aliquam minima. Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, aliquam illum alias vitae modi accusantium quasi illo ea quo incidunt quidem dignissimos consectetur, dolores aperiam debitis optio repudiandae? Quos, sunt? </p>
-                            
-                <p class="p2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod fugit beatae at. Facere sapiente odit ad iusto animi, ea aspernatur quisquam molestias aut impedit magni ab qui quibusdam aliquam minima. Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, aliquam illum alias vitae modi accusantium quasi illo ea quo incidunt quidem dignissimos consectetur, dolores aperiam debitis optio repudiandae? Quos, sunt? </p>
+                    allowfullscreen class="col col-12 col-md-4" loading="lazy" ></iframe>
+                <p class="col col-12 col-md-8">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod fugit beatae at. Facere sapiente odit ad iusto animi, ea aspernatur quisquam molestias aut impedit magni ab qui quibusdam aliquam minima. Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, aliquam illum alias vitae modi accusantium quasi illo ea quo incidunt quidem dignissimos consectetur, dolores aperiam debitis optio repudiandae? Quos, sunt? </p>
+            </div>  
+            <div class="row mb-5">             
+                <p class="col col-12 col-md-8 change">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod fugit beatae at. Facere sapiente odit ad iusto animi, ea aspernatur quisquam molestias aut impedit magni ab qui quibusdam aliquam minima. Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, aliquam illum alias vitae modi accusantium quasi illo ea quo incidunt quidem dignissimos consectetur, dolores aperiam debitis optio repudiandae? Quos, sunt? </p>
                 <iframe width="400" height="250" src="https://www.youtube.com/embed/dTnsT6uH708" title="YouTube video player"
                     frameborder="0"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                    allowfullscreen class="video2" loading="lazy" ></iframe>
+                    allowfullscreen class="col col-12 col-md-4" loading="lazy" ></iframe>
             </div>
             <div class="card">
                 <div class="card_front">
