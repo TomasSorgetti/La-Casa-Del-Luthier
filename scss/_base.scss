@@ -1,0 +1,39 @@
+/* Generales */
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    
+}
+body{
+    background-image: linear-gradient(bottom, $color_secundario, $color_principal);
+}
+body, html{
+    font-family: $text_font;
+    color: $color_texto;
+}
+
+h1,h2,h3,h4,h5,h6{
+    font-family: $header_font;
+    color: $color_acento;
+    text-align: center;
+}
+
+a,a:visited{
+    text-decoration: none;
+    color: black;
+}
+
+main{
+    padding-top: 120px;
+    padding-left: 10%;
+    padding-right: 10%;
+    margin-bottom: 8%;
+
+}
+/* Contact */
+.form1{
+    padding: 5%;
+    margin: 5% auto;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.4);
+}

@@ -1,0 +1,24 @@
+nav {
+    background-color: $color_principal;
+    div {
+        a.logo{
+            color: $color_acento;
+            font-family: $header_font;
+            font-size: 1.5rem;
+            }
+            a.nav_links.active{
+                font-weight: bold;
+                color: $color_acento;
+            }
+            a.nav_links{
+                color: $color_texto;
+                &:hover, &:active{
+                    color: $color_acento;
+                }  
+            }
+        ul.dropdown_dark{
+            background-color: $color_principal;
+        }
+    }
+
+}

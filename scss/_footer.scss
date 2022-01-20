@@ -1,0 +1,18 @@
+.footer{
+    background-color: $color_principal;
+    display: flex;
+    justify-content: center;
+    div{
+        margin: 10px;
+        text-align: center;
+        line-height: 25px;
+        font-size: 15px;
+    }
+    a{
+        margin: 0 20px;
+        color: $color_texto;
+        &:hover{
+            color: $color_acento;
+        }
+    }
+}

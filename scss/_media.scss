@@ -1,0 +1,17 @@
+/* Home */
+@media only screen and (max-width:768px){
+    .change{
+        order: 2;
+    }
+    #indianrosewoodguitars div{
+        width: 100%;
+        max-width: 500px;
+    }
+    .circles{
+        grid-template-columns: 1fr;
+    }
+    #sopran_ukulele{
+        width: 100%;
+        max-width: 500px;
+    }
+}

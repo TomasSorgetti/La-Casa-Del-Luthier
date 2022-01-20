@@ -1,0 +1,332 @@
+/* Generales */
+* {
+  padding: 0px;
+  margin: 0px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background-image: -webkit-gradient(linear, left bottom, left top, from(#2f2f39), to(#222229));
+  background-image: linear-gradient(bottom, #2f2f39, #222229);
+}
+
+body, html {
+  font-family: "Raleway", sans-serif;
+  color: #f3f3f3;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Cormorant Unicase", serif;
+  color: #fcbf7c;
+  text-align: center;
+}
+
+a, a:visited {
+  text-decoration: none;
+  color: black;
+}
+
+main {
+  padding-top: 120px;
+  padding-left: 10%;
+  padding-right: 10%;
+  margin-bottom: 8%;
+}
+
+/* Contact */
+.form1 {
+  padding: 5%;
+  margin: 5% auto;
+  -webkit-box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.4);
+          box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.4);
+}
+
+.card {
+  height: 250px;
+  width: 200px;
+  background-color: white;
+  position: relative;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+  -webkit-box-shadow: 5px 5px 50px 8px black;
+          box-shadow: 5px 5px 50px 8px black;
+  -webkit-transition: all 1s ease;
+  transition: all 1s ease;
+  cursor: pointer;
+  margin: 10% 10%;
+}
+
+.card:hover {
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+}
+
+.card_front {
+  width: 100%;
+  height: 100%;
+  background-image: url(../img/8.png);
+  background-size: cover;
+  position: absolute;
+}
+
+.card_back {
+  width: 100%;
+  height: 100%;
+  background-color: #222229;
+  -webkit-transform: rotateY(180deg) translateZ(1px);
+          transform: rotateY(180deg) translateZ(1px);
+}
+
+.card_back p {
+  margin: 10px 0px;
+  text-align: center;
+}
+
+.bg_card {
+  height: 15%;
+  width: 100%;
+  background-color: #2f2f39;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.bg_card h1 {
+  font-size: 20px;
+  color: #fcbf7c;
+  -webkit-transform: translateY(5px);
+          transform: translateY(5px);
+}
+
+.cont_card {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.cont_card a {
+  background-color: #fcbf7c;
+  padding: 10px 20px;
+  color: #fff;
+}
+
+nav {
+  background-color: #222229;
+}
+
+nav div a.logo {
+  color: #fcbf7c;
+  font-family: "Cormorant Unicase", serif;
+  font-size: 1.5rem;
+}
+
+nav div a.nav_links.active {
+  font-weight: bold;
+  color: #fcbf7c;
+}
+
+nav div a.nav_links {
+  color: #f3f3f3;
+}
+
+nav div a.nav_links:hover, nav div a.nav_links:active {
+  color: #fcbf7c;
+}
+
+nav div ul.dropdown_dark {
+  background-color: #222229;
+}
+
+/* Classical Guitars page grid */
+.guitar_grid a img {
+  width: 130px;
+  height: 130px;
+  border: #9B683E 6px solid;
+  border-radius: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+#indianrosewoodguitars div {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(240px, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  grid-auto-rows: 240px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+#indianrosewoodguitars img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.tall {
+  grid-row: span 2 / auto;
+}
+
+.circles {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+  margin-top: 3%;
+  margin-bottom: 3%;
+}
+
+.circles a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.circles img:hover {
+  -webkit-transform: translateY(-4px);
+          transform: translateY(-4px);
+  -webkit-box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.4);
+          box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.4);
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+/* ukuleles page grid */
+.ukulele_grid {
+  display: -ms-grid;
+  display: grid;
+}
+
+.uku_circles {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  margin-top: 3%;
+  margin-bottom: 3%;
+}
+
+.uku_circles a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.uku_circles a img {
+  width: 130px;
+  height: 130px;
+  border: #9B683E 6px solid;
+  border-radius: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.uku_circles a img:hover {
+  -webkit-transform: rotateY(360deg);
+          transform: rotateY(360deg);
+  -webkit-transition: all 1.5s ease;
+  transition: all 1.5s ease;
+}
+
+#sopran_ukulele img, #tenor_ukulele img {
+  width: 100%;
+  height: 100%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+#sopran_ukulele div, #tenor_ukulele div {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(240px, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  grid-auto-rows: 240px;
+  margin: 0 auto;
+  max-width: 1000px;
+}
+
+.footer {
+  background-color: #222229;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.footer div {
+  margin: 10px;
+  text-align: center;
+  line-height: 25px;
+  font-size: 15px;
+}
+
+.footer a {
+  margin: 0 20px;
+  color: #f3f3f3;
+}
+
+.footer a:hover {
+  color: #fcbf7c;
+}
+
+/* Home */
+@media only screen and (max-width: 768px) {
+  .change {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+  }
+  #indianrosewoodguitars div {
+    width: 100%;
+    max-width: 500px;
+  }
+  .circles {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+  #sopran_ukulele {
+    width: 100%;
+    max-width: 500px;
+  }
+}
+/*# sourceMappingURL=style.css.map */

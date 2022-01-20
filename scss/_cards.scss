@@ -1,0 +1,58 @@
+.card{
+    height: 250px;
+    width: 200px;
+    background-color: white;
+    position: relative;
+    transform-style: preserve-3d;
+    box-shadow: 5px 5px 50px 8px black;
+    transition: all 1s ease;
+    cursor: pointer;
+    margin: 10% 10%;
+    &:hover{
+        transform: rotateY(180deg);
+    }
+}
+.card_front{
+    width: 100%;
+    height: 100%;
+    background-image: url(../img/8.png);
+    background-size:cover;
+    position: absolute;
+    
+
+}
+.card_back{
+    width: 100%;
+    height: 100%;
+    background-color: $color_principal;
+    transform: rotateY(180deg) translateZ(1px);
+    p{
+        margin: 10px 0px;
+        text-align:center;
+    }
+}
+.bg_card{
+    height: 15%;
+    width: 100%;
+    background-color: $color_secundario;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    h1{
+        font-size: 20px;
+        color: $color_acento;
+        transform: translateY(5px); 
+    }  
+
+} 
+.cont_card {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    a{
+        background-color: $color_acento;
+        padding: 10px 20px;
+        color: #fff;
+    }    
+}
