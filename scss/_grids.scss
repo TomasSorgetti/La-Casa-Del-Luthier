@@ -6,7 +6,7 @@
     border-radius: 50%;
     object-fit: cover;
 }
-#indianrosewoodguitars {
+#indianrosewoodguitars, #mapleguitars, #walnutguitars {
     div{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
@@ -20,7 +20,6 @@
         object-fit: cover;
     }
 }
-
 .tall{
     grid-row: span 2 / auto
 }
@@ -35,6 +34,7 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        color: $color_texto;
     }
     img:hover{
         transform: translateY(-4px);

@@ -14,4 +14,15 @@
         width: 100%;
         max-width: 500px;
     }
+    .cards{
+        flex-direction: column;
+        align-items: center;
+    }
+    .info-container{
+        min-height: 400px;
+        .info::after{
+            display: none;
+        }
+    }
+    
 }
