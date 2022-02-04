@@ -1,0 +1,41 @@
+@mixin flexbox ($justify,$align,$direction){
+    display: flex;
+    justify-content: $justify;
+    align-items: $align;
+    flex-direction: $direction;
+}
+
+
+/* botones extend */
+.boton{
+    background-color: $color_acento;
+    display: block;
+    outline: none;
+    &-lg{
+        @extend .boton;
+        font-size: 1.5rem;
+    }
+
+}
+
+/* Maps */
+
+$tamanio: (
+    small: 0.875rem,
+    normal: 1rem,
+    medium: 1.25rem,
+    large: 1.5rem,
+    largest: 3rem,
+);
+
+.info-container .info p {
+    font-size: map-get($tamanio, small);
+}
+
+.bg_card h1 {
+    font-size: map-get($tamanio, medium);
+}
+
+nav div a.logo {
+    font-size: map-get($tamanio, large);
+}

@@ -1,7 +1,6 @@
 .footer{
     background-color: $color_principal;
-    display: flex;
-    justify-content: center;
+    @include flexbox (center,center, row);
     div{
         margin: 10px;
         text-align: center;

@@ -48,9 +48,7 @@
     height: 15%;
     width: 100%;
     background-color: $color_secundario;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    @include flexbox (center, center, row);
     h1{
         font-size: 20px;
         color: $color_acento;
@@ -60,9 +58,7 @@
 } 
 .cont_card {
     width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    @include flexbox (center, center, row);
     a{
         background-color: $color_acento;
         padding: 10px 20px;

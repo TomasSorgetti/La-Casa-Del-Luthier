@@ -1,0 +1,2 @@
+Agregue descripcion, keywords, y modifiqué titulos en todas las páginas.
+le agregue loading="lazy" y el alt a todas las imagenes.
