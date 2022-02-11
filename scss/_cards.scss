@@ -4,18 +4,23 @@
 .cards{
     display: flex;
     justify-content: center;
+    
 }
 .card{
-    margin: 4% 3%;
+    
     height: 250px;
     width: 200px;
-    background-color: white;
+    background-color: $color_acento;
     position: relative;
     transform-style: preserve-3d;
     box-shadow: 3px 3px 30px 8px #1b1b1b;
     transition: all 1s ease;
     cursor: pointer;
-    &:hover{
+    
+}
+.card-cont{
+    margin: 4% 3%;
+    &:hover .card{
         transform: rotateY(180deg);
     }
 }
@@ -24,6 +29,7 @@
     height: 100%;
     background-size:cover;
     position: absolute;
+    
 }
 .card1{
     background-image: url(../img/others/bass1.jpeg);
@@ -38,6 +44,7 @@
     width: 100%;
     height: 100%;
     background-color: $color_principal;
+    
     transform: rotateY(180deg) translateZ(1px);
     p{
         margin: 10px 0px;
@@ -48,6 +55,7 @@
     height: 15%;
     width: 100%;
     background-color: $color_secundario;
+    
     @include flexbox (center, center, row);
     h1{
         font-size: 20px;
@@ -58,6 +66,7 @@
 } 
 .cont_card {
     width: 100%;
+    
     @include flexbox (center, center, row);
     a{
         background-color: $color_acento;

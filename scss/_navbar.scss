@@ -1,5 +1,5 @@
 nav {
-    background-color: $color_principal;
+    background-color: transparent;
     div {
         a.logo{
             color: $color_acento;
@@ -19,6 +19,12 @@ nav {
         ul.dropdown_dark{
             background-color: $color_principal;
         }
+        .dropdown-item.active{
+            background-color: $color_principal;
+        }
+    }
+    .inst_hover:hover{
+        background-color: $color_principal;
     }
 
 }

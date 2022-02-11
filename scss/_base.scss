@@ -25,12 +25,16 @@ a,a:visited{
 }
 
 main{
-    padding-top: 120px;
+    padding-top: 70px;
     padding-left: 10%;
     padding-right: 10%;
     margin-bottom: 8%;
 
 }
+.carrousel-h{
+    height: 98vh;
+}
+
 /* Contact */
 .form1{
     padding: 5%;
@@ -70,4 +74,24 @@ main{
     }
 
 }
-
+.pro-cont{
+    max-width: 800px;
+    margin: 0 auto;
+    p{
+        margin-bottom: 3rem;
+        margin-top: 3rem;
+    }
+}
+/* about us */
+.about-img{
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    height: 400px;
+    background-size: cover;
+    &:nth-child(1){
+        background-image: url(../img/IMG_3690.jpg);
+    }
+    &:nth-child(2){
+        background-image: url(../img/8.png);
+    }
+}
