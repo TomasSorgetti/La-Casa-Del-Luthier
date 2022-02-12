@@ -56,6 +56,8 @@ main {
 
 .carrousel-h {
   height: 98vh;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 /* Contact */
@@ -277,6 +279,10 @@ nav div .dropdown-item.active {
 }
 
 nav .inst_hover:hover {
+  background-color: #222229;
+}
+
+#navbar.scroll {
   background-color: #222229;
 }
 
