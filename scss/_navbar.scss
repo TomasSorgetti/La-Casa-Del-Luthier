@@ -1,5 +1,5 @@
 nav {
-    background-color: transparent;
+    background-color: $color_principal;
     div {
         a.logo{
             color: $color_acento;
@@ -30,4 +30,7 @@ nav {
 }
 #navbar.scroll {
     background-color: $color_principal;
+}
+.navbar-index{
+    background-color: transparent;
 }

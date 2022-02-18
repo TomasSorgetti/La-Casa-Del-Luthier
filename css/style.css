@@ -178,11 +178,11 @@ main {
 }
 
 .card2 {
-  background-image: url(../img/others/bass2.jpeg);
+  background-image: url(../img/lapsteelguitar.jpg);
 }
 
 .card3 {
-  background-image: url(../img/others/bass3.jpeg);
+  background-image: url(../img/guitarrosette.jpg);
 }
 
 .card_back {
@@ -248,7 +248,7 @@ main {
 }
 
 nav {
-  background-color: transparent;
+  background-color: #222229;
 }
 
 nav div a.logo {
@@ -284,6 +284,10 @@ nav .inst_hover:hover {
 
 #navbar.scroll {
   background-color: #222229;
+}
+
+.navbar-index {
+  background-color: transparent;
 }
 
 /* Classical Guitars page grid */
