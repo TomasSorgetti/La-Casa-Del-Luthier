@@ -54,6 +54,13 @@ main {
   margin-bottom: 8%;
 }
 
+.home_main, body.home_main {
+  padding: 0px;
+  background-color: #f7f4f0;
+  margin-bottom: 0px;
+  background-image: none;
+}
+
 .carrousel-h {
   height: 98vh;
   -o-object-fit: cover;
@@ -69,12 +76,18 @@ main {
 }
 
 .info-container {
-  margin: 8% 0%;
+  margin-top: 8%;
   background-color: #2f2f39;
   min-height: 250px;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.info-container i {
+  font-size: 2rem;
+  color: #fcbf7c;
+  margin-bottom: 1rem;
 }
 
 .info-container .info {
@@ -105,13 +118,8 @@ main {
 }
 
 .pro-cont {
-  max-width: 800px;
-  margin: 0 auto;
-}
-
-.pro-cont p {
-  margin-bottom: 3rem;
-  margin-top: 3rem;
+  background-image: url(../img/background_main.jpg);
+  min-height: 300px;
 }
 
 /* about us */
@@ -130,8 +138,39 @@ main {
   background-image: url(../img/8.png);
 }
 
+/* Comentarios home */
+.pers {
+  background-color: #2f2f39;
+}
+
+.pers .primero {
+  margin: 0 auto;
+  text-align: center;
+}
+
+.pers div {
+  width: 100%;
+  max-width: 400px;
+}
+
+.pers img {
+  height: 64px;
+  width: 64px;
+  border-radius: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.card-background {
+  display: block;
+}
+
 .card_title {
   margin-top: 5%;
+}
+
+.card_title h2 {
+  color: #222229;
 }
 
 .cards {
@@ -146,12 +185,10 @@ main {
 .card {
   height: 250px;
   width: 200px;
-  background-color: #fcbf7c;
+  background-color: #f7f4f0;
   position: relative;
   -webkit-transform-style: preserve-3d;
           transform-style: preserve-3d;
-  -webkit-box-shadow: 3px 3px 30px 8px #1b1b1b;
-          box-shadow: 3px 3px 30px 8px #1b1b1b;
   -webkit-transition: all 1s ease;
   transition: all 1s ease;
   cursor: pointer;

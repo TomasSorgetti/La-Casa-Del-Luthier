@@ -1,6 +1,12 @@
-
+.card-background {
+    display: block;
+    
+}
 .card_title{
     margin-top: 5%;
+    h2{
+        color: $color_principal;
+    }
 }
 .cards{
     display: flex;
@@ -11,10 +17,9 @@
     
     height: 250px;
     width: 200px;
-    background-color: $color_acento;
+    background-color: $color_fondo;
     position: relative;
     transform-style: preserve-3d;
-    box-shadow: 3px 3px 30px 8px #1b1b1b;
     transition: all 1s ease;
     cursor: pointer;
     
