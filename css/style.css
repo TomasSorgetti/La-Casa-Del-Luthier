@@ -67,6 +67,10 @@ main {
      object-fit: cover;
 }
 
+.cap-bg {
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
 /* Contact */
 .form1 {
   padding: 5%;
@@ -97,7 +101,7 @@ main {
 .info-container .info:nth-child(1)::after, .info-container .info:nth-child(2)::after {
   content: "";
   width: 1px;
-  height: 80px;
+  height: 130px;
   background-color: #f3f3f3;
   position: absolute;
   right: 0%;
@@ -120,6 +124,20 @@ main {
 .pro-cont {
   background-image: url(../img/background_main.jpg);
   min-height: 300px;
+  padding-top: 5%;
+  padding-bottom: 5%;
+}
+
+.pro-cont p {
+  font-size: 0.875rem;
+}
+
+.pro-cont .container {
+  max-width: 900px;
+}
+
+.pro-cont h2 {
+  margin-bottom: 5%;
 }
 
 /* about us */
@@ -141,11 +159,19 @@ main {
 /* Comentarios home */
 .pers {
   background-color: #2f2f39;
+  padding: 2rem;
 }
 
-.pers .primero {
+.pers.primero {
   margin: 0 auto;
   text-align: center;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+
+.pers.primero p {
+  width: 50%;
+  margin: 1rem auto;
 }
 
 .pers div {
@@ -526,9 +552,37 @@ nav .inst_hover:hover {
   }
   .info-container {
     min-height: 400px;
+    margin-right: 0;
+    margin-left: 0;
+    padding-top: 3rem;
+    padding-bottom: 1rem;
+  }
+  .info-container div {
+    margin-bottom: 3rem;
   }
   .info-container .info::after {
     display: none;
+  }
+  .carrousel-h {
+    height: 50vh;
+  }
+  .footer div {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .pro-cont {
+    padding-top: 3rem;
   }
 }
 /*# sourceMappingURL=style.css.map */

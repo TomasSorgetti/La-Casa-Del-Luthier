@@ -20,9 +20,26 @@
     }
     .info-container{
         min-height: 400px;
+        margin-right: 0;
+        margin-left: 0;
+        padding-top: 3rem;
+        padding-bottom: 1rem;
+        div{
+            margin-bottom: 3rem;
+        }
         .info::after{
             display: none;
         }
     }
-    
+    .carrousel-h{
+        height: 50vh;
+    }
+    .footer{
+        div{
+            @include flexbox (center, center, column)
+        }
+    }
+    .pro-cont{
+        padding-top: 3rem;
+    }
 }

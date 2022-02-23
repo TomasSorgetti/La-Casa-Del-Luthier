@@ -43,6 +43,9 @@ main{
     height: 98vh;
     object-fit: cover;
 }
+.cap-bg{
+    background-color: rgba(0, 0, 0, 0.4);
+}
 
 /* Contact */
 .form1{
@@ -67,7 +70,7 @@ main{
             &::after{
                 content: "";
                 width: 1px;
-                height: 80px;
+                height: 130px;
                 background-color: $color_texto;
                 position: absolute;
                 right: 0%;
@@ -91,7 +94,17 @@ main{
 .pro-cont{
     background-image: url(../img/background_main.jpg);
     min-height: 300px;
-    
+    padding-top: 5%;
+    padding-bottom: 5%;
+    p{
+        font-size: 0.875rem;
+    }
+    .container{
+        max-width: 900px;
+    }
+    h2{
+        margin-bottom: 5%;
+    }
 }
 /* about us */
 .about-img{
@@ -110,9 +123,17 @@ main{
 /* Comentarios home */
 .pers {
     background-color: $color_secundario;
-    .primero{
+    padding: 2rem;
+    
+    &.primero{
         margin: 0 auto;
         text-align: center;
+        padding-top: 5rem;
+        padding-bottom: 5rem;
+        p{
+            width: 50%;
+            margin: 1rem auto;
+        }
     }
     div{
         width: 100%;
