@@ -48,10 +48,23 @@ main{
 }
 
 /* Contact */
+.main-bg{
+    background-image: url(../img/contact/1.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+}
 .form1{
     padding: 5%;
     margin: 5% auto;
-    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.4);
+    input:focus, textarea:focus{
+        border: none;
+        box-shadow: none;
+        border-bottom: 3px solid $color_acento;        
+    }
+    label{
+        color: $color_acento;
+    }
 }
 
 .info-container{
@@ -59,6 +72,8 @@ main{
     background-color: $color_secundario;
     min-height: 250px;
     align-items: center;
+    margin-right: 0;
+    margin-left: 0;
     i {
         font-size: 2rem;
         color: $color_acento;
@@ -107,26 +122,76 @@ main{
     }
 }
 /* about us */
-.about-img{
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    height: 400px;
-    background-size: cover;
-    &:nth-child(1){
-        background-image: url(../img/IMG_3690.jpg);
+.about-main{
+    padding: 0;
+    margin: 0;
+    padding-top: 120px;
+    background-color: $color_secundario;
+}
+.about1{
+    background-color: $color_secundario;
+    display: flex;
+    div:nth-child(1){
+        padding: 5% 10%;
     }
-    &:nth-child(2){
-        background-image: url(../img/8.png);
+    h1{
+        text-align: left;
+    }
+    img{
+        border-radius: 0 0 0 58px;
     }
 }
-
+.about2{
+    background-color: $color_principal;
+    display: flex;
+    h2{
+        text-align: left;
+    }
+    
+    div:nth-child(2){
+        padding: 5% 10%;
+        @include flexbox (center, center, column)
+    }
+    img{
+        flex: 0 0 50%;
+    }   
+    
+    
+}
+.about3{
+    background-color: $color_fondo;
+    color: $color_principal;
+    min-height: 130vh;
+    @include flexbox(center, center, column);
+    h2, h3{
+        color: $color_principal;
+        margin-top: 48px;
+        margin-bottom: 48px;
+    }
+    h3{
+        text-align: left;
+        font-family: $text_font;
+        font-size: map-get($tamanio, medium);
+    }
+    .history{
+        max-width: 70%;
+        margin: 0 auto;
+    }
+}
+.about4{
+    @include flexbox (center, center, row);
+    img{
+        flex: 0 0 33%;
+    }
+}
 /* Comentarios home */
 .pers {
     background-color: $color_secundario;
     padding: 2rem;
-    
+    margin-bottom: 1rem;
     &.primero{
         margin: 0 auto;
+        margin-bottom: 1rem;
         text-align: center;
         padding-top: 5rem;
         padding-bottom: 5rem;
@@ -146,6 +211,32 @@ main{
         border-radius: 100%;
         object-fit: cover;
     }
-    
+    .comillas{
+        position: relative;
+        margin: 0 auto;
+        img{
+            border-radius: 0;
+            object-fit: contain;
+            width: 54px;
+        }
+        &::before{
+            position: absolute;
+            content:"";
+            background-color: #dfe1e6;
+            height: 1px;
+            width: 100px;
+            left: 0;
+            top: 50%;
+        }
+        &::after{
+            position: absolute;
+            content:"";
+            background-color: #dfe1e6;
+            height: 1px;
+            width: 100px;
+            right: 0;
+            top: 50%;            
+        }
+    }
 
 }

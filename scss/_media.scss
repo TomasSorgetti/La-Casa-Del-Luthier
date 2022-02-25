@@ -20,8 +20,6 @@
     }
     .info-container{
         min-height: 400px;
-        margin-right: 0;
-        margin-left: 0;
         padding-top: 3rem;
         padding-bottom: 1rem;
         div{
@@ -41,5 +39,29 @@
     }
     .pro-cont{
         padding-top: 3rem;
+        h2{
+            padding-bottom: 2rem;
+        }
     }
+    .pers{
+        margin: 0 auto;
+        margin-bottom: 1rem;
+        width: 90%;
+        margin-right: auto;
+    }
+    .pers.primero{
+        padding: 2rem;
+        p{
+            width: auto;
+        }
+        .comillas{
+            img{
+                width: 32px;
+            }
+            &::before, &::after{
+                width: 70px;
+            }
+        }
+    }
+    
 }
