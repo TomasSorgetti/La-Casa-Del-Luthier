@@ -11,7 +11,10 @@
     background-color: $color_acento;
     display: block;
     outline: none;
-    
+    &:hover{
+        background-color: $color_acento_secundario;
+        color: #fff;
+    }
 }
 
 /* Maps */

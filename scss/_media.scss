@@ -63,5 +63,31 @@
             }
         }
     }
+    .about1{
+        flex-direction: column;
+        img{
+            width: 100%;
+            border-radius: 0;
+        }
+    }
+    .about2{
+        flex-direction: column;
+        .divider{
+            display: none;
+        }
+        img{
+            width: 100%;
+        }
+        div:nth-child(3){
+            min-height: 70vh;
+        }
+    }
+    .about4{
+        flex-direction: column;
+        img{
+            width: 100%;
+            filter: saturate(100%);
+        }
+    }
     
 }

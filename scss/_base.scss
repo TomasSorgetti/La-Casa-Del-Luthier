@@ -125,7 +125,7 @@ main{
 .about-main{
     padding: 0;
     margin: 0;
-    padding-top: 120px;
+    padding-top: 62px;
     background-color: $color_secundario;
 }
 .about1{
@@ -144,24 +144,39 @@ main{
 .about2{
     background-color: $color_principal;
     display: flex;
+    position: relative;
     h2{
         text-align: left;
     }
     
-    div:nth-child(2){
+    div:nth-child(3){
         padding: 5% 10%;
         @include flexbox (center, center, column)
     }
     img{
         flex: 0 0 50%;
     }   
-    
+    .divider{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+    }
+    .divider2{
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+    }
     
 }
+
 .about3{
+    position: relative;
     background-color: $color_fondo;
     color: $color_principal;
     min-height: 130vh;
+    margin-top: -5px;
     @include flexbox(center, center, column);
     h2, h3{
         color: $color_principal;
@@ -181,7 +196,13 @@ main{
 .about4{
     @include flexbox (center, center, row);
     img{
-        flex: 0 0 33%;
+        width: 30%;
+        flex-grow: 1;
+        filter: saturate(30%);
+        &:hover{
+            transition: 0.5s;
+            filter: saturate(100%);
+        }
     }
 }
 /* Comentarios home */
