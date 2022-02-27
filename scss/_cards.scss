@@ -39,6 +39,7 @@
 }
 .card1{
     background-image: url(../img/others/bass1.jpeg);
+    background-position: center;
 }
 .card2{
     background-image: url(../img/lapsteelguitar.jpg);
@@ -77,6 +78,6 @@
     a{
         background-color: $color_acento;
         padding: 10px 20px;
-        color: #fff;
+        color: $color_principal;
     }    
 }

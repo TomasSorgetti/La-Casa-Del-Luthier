@@ -31,7 +31,10 @@
     margin-bottom: 3%;
     a{
         @include flexbox (center, center, column);
-        color: $color_texto;
+        p{
+            color: $color_acento;
+            margin-top: 5%;
+        }
     }
     img:hover{
         transform: translateY(-4px);
@@ -53,6 +56,10 @@
     a{
         color: $color_texto;
         @include flexbox (center, center, column);
+        p{
+            color: $color_acento;
+            margin-top: 5%;
+        }
         img{
             width: 130px;
             height: 130px;
@@ -68,18 +75,20 @@
     }
 }
 
-#sopran_ukulele img, #tenor_ukulele img{
-    width: 100%;
-    height: 100%;
-    align-items: center;
-    object-fit: cover;
-}
+
 
 #sopran_ukulele, #tenor_ukulele{
     div{
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
         grid-auto-rows: 240px;
+        max-width: 1000px;
         margin: 0 auto;
-        max-width: 1000px;}
+        }
+        img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            align-items: center;
+        }
 }
