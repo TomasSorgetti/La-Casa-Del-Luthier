@@ -770,6 +770,7 @@ nav .inst_hover:hover {
           justify-content: center;
   font-weight: 10;
   margin-top: 1rem;
+  text-align: center;
 }
 
 .error404 main div {
@@ -915,6 +916,14 @@ nav .inst_hover:hover {
   }
   .error404 main h1 {
     font-size: 3rem;
+  }
+  .cap-bg .carrousel_title {
+    font-size: 1rem;
+    margin-top: -6%;
+  }
+  .cap-bg p {
+    font-size: 0.7rem;
+    margin-bottom: 1%;
   }
 }
 /*# sourceMappingURL=style.css.map */
