@@ -88,5 +88,11 @@
             filter: saturate(100%);
         }
     }
-    
+    .error404{
+        main{
+            h1{
+                font-size: 3rem;
+            }
+        }
+    }
 }

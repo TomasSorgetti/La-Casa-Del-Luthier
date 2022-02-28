@@ -53,58 +53,60 @@
     </div>
   </nav>
   
-    <main class="ukulele-grid container">
-        <section>
-            <h1>Ukuleles</h1>
-            <p>
-              We have a wide range of ukulele, from our inexpensive, durable Waterman line to our heirloom-style, California made Hawaiian Koa Elites and everything in-between. With the player in mind, we offer many different styles to make your choice of instrument very personal.
-            </p>
-        </section>
-<!-- Círculos linkeados a galerías -->
-        <section class="uku_circles">
-            <a href="#sopran_ukulele" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="sopran_ukulele" aria-controls="multiCollapseExample1">
-                <img src="img/ukuleles/sopran/2.jpeg" loading="lazy" alt="sopran ukulele image">
-                <p>Sopran Ukulele</p> 
-            </a>
-            <a href="#tenor_ukulele" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="tenor_ukulele">
-                <img src="img/ukuleles/tenor/1.jpg" loading="lazy" alt="tenor ukulele image">
-                <p>Tenor Ukulele</p> 
-            </a>
-        </section>
-<!-- Galería Sopran Ukulele -->
-        <section id="sopran_ukulele" class="multi-collapse collapse show">
-            <h2>Sopran Ukulele</h2>
-            <div>
-                <img src="img/ukuleles/sopran/1.jpeg" loading="lazy" alt="sopran ukulele image" class="tall">
-                <img src="img/ukuleles/sopran/2.jpeg" loading="lazy" alt="sopran ukulele image">
-                <img src="img/ukuleles/sopran/3.jpg" loading="lazy" alt="sopran ukulele image">
-                <img src="img/ukuleles/sopran/5.jpg" loading="lazy" alt="sopran ukulele image">
-                <img src="img/ukuleles/sopran/7.jpg" loading="lazy" alt="sopran ukulele image">
-                <img src="img/ukuleles/sopran/8.jpg" loading="lazy" alt="sopran ukulele image">
-                <img src="img/ukuleles/sopran/9.jpg" loading="lazy" alt="sopran ukulele image">
-            </div>
-        </section>
-<!-- Galería Tenor Ukulele -->
-        <section id="tenor_ukulele" class="collapse multi-collapse">
-            <h3>Tenor Ukulele</h3>
-            <div>
-                <img src="img/ukuleles/tenor/1.jpg" loading="lazy" alt="Tenor ukulele image" class="tall">
-                <img src="img/ukuleles/tenor/3.jpg" loading="lazy" alt="Tenor ukulele image" class="tall">
-                <img src="img/ukuleles/tenor/2.jpg" loading="lazy" alt="Tenor ukulele image" class="tall">
-                <img src="img/ukuleles/tenor/4.jpg" loading="lazy" alt="Tenor ukulele image" class="tall">
-            </div>
-        </section> 
-    </main>
-<!-- Footer -->
-    <footer class="footer">
-      <hr>
+  <main class="ukulele-grid container" id="ukulele_container">
+    <section>
+        <h1>Ukuleles</h1>
+        <p>
+          We have a wide range of ukulele, from our inexpensive, durable Waterman line to our heirloom-style, California made Hawaiian Koa Elites and everything in-between. With the player in mind, we offer many different styles to make your choice of instrument very personal.
+        </p>
+    </section>
+<!-- Sección círculos linkeados a galerias -->
+    <section class="uku_circles">
+        <a href="#sopran_ukulele" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="multiCollapseExample1">
+            <img src="img/ukuleles/sopran/2.jpeg" loading="lazy" alt="sopran ukulele image"> 
+            <p>Sopran Ukulele</p>
+        </a>
+        <a href="#tenor_ukulele" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="tenor_ukulele">
+            <img src="img/ukuleles/tenor/1.jpg" loading="lazy" alt="tenor ukulele image">
+            <p>Tenor Ukulele</p>
+        </a>
+    </section>
+   <section class="accordion-group">
+<!-- Sopran Ukulele Galería -->
+    <section id="sopran_ukulele" class="multi-collapse collapse show" data-bs-parent="#ukulele_container">
+      <h2>Sopran Ukulele</h2>
       <div>
-          <a target="_blank" href="https://www.instagram.com/tomassorgetti/"><i class="fab fa-instagram"></i> Instagram</a>
-          <a href=""><i class="fab fa-facebook-square"></i> Facebook </a>
-          <a href=""><i class="fab fa-twitter"></i> Twitter</a>
-          <a href=""><i class="fas fa-envelope-square"></i> Email</a>
+          <img src="img/ukuleles/sopran/1.jpeg" loading="lazy" alt="sopran ukulele image" class="tall">
+          <img src="img/ukuleles/sopran/2.jpeg" loading="lazy" alt="sopran ukulele image">
+          <img src="img/ukuleles/sopran/3.jpg" loading="lazy" alt="sopran ukulele image">
+          <img src="img/ukuleles/sopran/5.jpg" loading="lazy" alt="sopran ukulele image">
+          <img src="img/ukuleles/sopran/7.jpg" loading="lazy" alt="sopran ukulele image">
+          <img src="img/ukuleles/sopran/8.jpg" loading="lazy" alt="sopran ukulele image">
+          <img src="img/ukuleles/sopran/9.jpg" loading="lazy" alt="sopran ukulele image">
       </div>
-  </footer>
+  </section>
+<!-- Tenor Ukulele Galería -->
+  <section id="tenor_ukulele" class="collapse multi-collapse"  data-bs-parent="#ukulele_container">
+      <h3>Tenor Ukulele</h3>
+      <div>
+          <img src="img/ukuleles/tenor/1.jpg" loading="lazy" alt="Tenor ukulele image" class="tall">
+          <img src="img/ukuleles/tenor/3.jpg" loading="lazy" alt="Tenor ukulele image" class="tall">
+          <img src="img/ukuleles/tenor/2.jpg" loading="lazy" alt="Tenor ukulele image" class="tall">
+          <img src="img/ukuleles/tenor/4.jpg" loading="lazy" alt="Tenor ukulele image" class="tall">
+      </div>
+  </section> 
+   </section>
+</main>
+<!-- Footer -->
+<footer class="footer">
+  <hr>
+  <div>
+      <a target="_blank" href="https://www.instagram.com/tomassorgetti/"><i class="fab fa-instagram"></i> Instagram</a>
+      <a target="_blank" href="https://www.facebook.com/"><i class="fab fa-facebook-square"></i> Facebook </a>
+      <a target="_blank" href="https://twitter.com/"><i class="fab fa-twitter"></i> Twitter</a>
+      <a target="_blank" href="https://mail.google.com"><i class="fas fa-envelope-square"></i> Email</a>
+  </div>
+</footer>
 <!-- Script -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 <script src="navbar.js">
