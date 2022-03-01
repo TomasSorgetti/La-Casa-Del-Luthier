@@ -151,6 +151,7 @@ main {
 
 .pro-cont {
   background-image: url(../img/background_main.jpg);
+  background-size: cover;
   min-height: 300px;
   padding-top: 5%;
   padding-bottom: 5%;
